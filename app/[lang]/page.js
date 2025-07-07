@@ -10,13 +10,11 @@ export default async function Home({ params: { lang } }) {
   const photos = await res.json();
   return (
     <>
-      <div className="container">
+      <div className="text-3xl mb-4">
         Welcome to PhotoFeed
-        <h1>{dictionaries.followers}....</h1>
       </div>
-      <div className="container my-4 lg:my-8">
         <PhotoList photos={photos} />
-      </div>
+      
     </>
   );
 }
