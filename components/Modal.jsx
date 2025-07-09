@@ -1,7 +1,7 @@
 "use client";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 function Modal({ children }) {
